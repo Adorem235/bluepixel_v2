@@ -1,28 +1,26 @@
 export default function Footer() {
     return (
-      <footer className="bg-darkBlue text-white py-8">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between">
+      <footer className="bg-gray-900 text-gray-300 py-10">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-bold text-lg">BluePixel</h3>
-            <p>Professional web development service for startups and businesses.</p>
+            <h4 className="font-semibold text-white mb-2">Blue Pixel Studio</h4>
+            <p>Professional web design for startups and small businesses.</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">Services</h4>
-            <ul>
+            <h4 className="font-semibold text-white mb-2">Services</h4>
+            <ul className="space-y-1">
               <li>Web Development</li>
-              <li>Design</li>
-              <li>SEO</li>
+              <li>Design Consulting</li>
+              <li>Maintenance & Support</li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">Contact</h4>
-            <p>hello@bluepixel.com</p>
-            <p>+1 (555) 123-4567</p>
+            <h4 className="font-semibold text-white mb-2">Contact</h4>
+            <p>Email: contact@bluepixel.com</p>
+            <p>Phone: +1 (234) 567-890</p>
           </div>
         </div>
-        <div className="text-center mt-6 text-sm text-gray-400">
-          © 2025 BluePixel. All rights reserved.
-        </div>
+        <div className="text-center text-sm mt-8 text-gray-500">© 2025 Blue Pixel Studio. All rights reserved.</div>
       </footer>
     )
 }

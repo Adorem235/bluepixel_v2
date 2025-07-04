@@ -1,28 +1,31 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-transparent shadow-md fixed top-0 left-0 z-50">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold text-blue-600">
-          Bluepixel Studios
-        </Link>
-        <div className="space-x-4">
-          <Link href="/" className="text-gray-700 hover:text-blue-600">
-            Home
-          </Link>
-          <Link href="/Pages/About" className="text-gray-700 hover:text-blue-600">
-            About
-          </Link>
-          <Link href="/Pages/Pricing" className="text-gray-700 hover:text-blue-600">
-            Pricing
-          </Link>
-          <Link href="/Pages/Contact" className="text-gray-700 hover:text-blue-600">
-            Contact
-          </Link>
+      <header className=" bg-darkGray shadow-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+          <div className="flex items-center space-x-3">
+            <Image
+              src="/logo_transparent.png" alt="Blue Pixel logo" width={200} height={100}/>
+          </div>
+          <nav className="flex items-center space-x-8 text-sm font-medium text-white">
+            <Link href="/" className="hover:text-blue-700">Home</Link>
+            <Link href="/Pages/About" className="hover:text-blue-700">About Us</Link>
+            <Link href="/Pages/Pricing" className="hover:text-blue-700">Pricing</Link>
+
+           { /* To be implemented with projects
+            <Link href="/Pages/Projects" className="hover:text-blue-700">Projects Gallery</Link>
+            */}
+            <Link
+              href="#contact"
+              className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+            >
+              Contact Us
+            </Link>
+          </nav>
         </div>
-      </div>
-    </nav>
+      </header>
   );
 }
