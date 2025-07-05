@@ -1,5 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
@@ -15,25 +15,26 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Bluepixel Studios",
-  description: "Blue Pixel Studios is a game development studio focused on creating immersive and engaging websites.",
+  description:
+    "Blue Pixel Studios is a web development studio focused on creating immersive and engaging websites.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
-        
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
           content="Blue Pixel Studios is a web development studio focused on creating immersive and engaging websites."
         />
+        <link rel="icon" href="/favicon.png" />
+        <title>Bluepixel Studios</title>
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         <Navbar />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
