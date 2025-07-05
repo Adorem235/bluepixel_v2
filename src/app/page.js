@@ -5,7 +5,7 @@ export default function Home() {
     <>
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-orange-100 via-orange-200 to-blue-100 py-20 text-center">
+      <section className="bg-gradient-to-b from-orange-100 via-orange-200 to-blue-100 py-20 px-4 md:px-0 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6">
             BRINGING YOUR VISION TO LIFE<br />ONE PIXEL AT A TIME
