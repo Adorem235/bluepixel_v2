@@ -16,8 +16,8 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-semibold text-white mb-2">Contact</h4>
-            <p>Email: contact@bluepixel.com</p>
-            <p>Phone: +1 (234) 567-890</p>
+            <p>Email: contact@bluepixelstudios.co.zw</p>
+            {/*<p>Phone: +1 (234) 567-890</p>*/}
           </div>
         </div>
         <div className="text-center text-sm mt-8 text-gray-500">© 2025 Blue Pixel Studio. All rights reserved.</div>
