@@ -13,12 +13,12 @@ export default function Home() {
           <p className="text-lg text-gray-600 mb-8">
             Custom websites designed to reflect your brand and grow your business.
           </p>
-          <a
-            href="#contact"
+          <Link
+            href="/Pages/Contact"
             className="inline-block px-6 py-3 bg-blue-600 text-white rounded shadow hover:bg-blue-700"
           >
             Kickstart Your Website
-          </a>
+          </Link>
         </div>
       </section>
 
